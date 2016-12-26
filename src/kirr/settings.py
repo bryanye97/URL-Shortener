@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['127.0.0.1', 'tirr.com', 'www.tirr.com','blog.tirr.com', 'www.k
 # Application definition
 
 INSTALLED_APPS = [
+    'analytics',
     'shortener',
     'django.contrib.admin',
     'django.contrib.auth',
