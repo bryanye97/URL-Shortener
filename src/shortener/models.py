@@ -37,7 +37,6 @@ class KirrURL(models.Model):
     active      = models.BooleanField(default=True)
 
     objects = KirrURLManager()
-    # some_random = KirrURLManager()
 
     def save(self, *args, **kwargs):
         if self.shortcode is None or self.shortcode == "":
@@ -46,3 +45,6 @@ class KirrURL(models.Model):
 
     def __str__(self):
         return str(self.url)
+
+    # def get_short_url(self):
+    #     return "http://www.tirr.com/{shortcode}".format(shortcode=self.shortcode)
